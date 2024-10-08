@@ -31,9 +31,7 @@ JavaScript: Adding interactivity for managing tasks and utilizing local storage.
 
 Icons: FontAwesome for modern and customizable icons.
 
-Demo
 
-Check out the live demo of the Daily Planner: Live Demo Link  http://127.0.0.1:3000/index.html
 
 Contributing
 
