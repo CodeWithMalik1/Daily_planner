@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+
+}
+
+h2 {
+  margin: 10px;
+  padding: 10px;
+  font-size: 45px;
+  text-shadow: 1px 1px 6px rgb(18, 177, 166);
+
+}
+
+
+h2 img {
+  margin-right: 10px;
+  transition: transform 0.5s, width 0.5s, height 0.5s;
+}
+
+h2 img:hover {
+  transform: scale(1.2);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(0, 153, 255), orange);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo {
+  width: 100%;
+  max-width: 540px;
+  background-color: aliceblue;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 80%;
+  box-shadow: 8px 6px 9px rgb(110, 129, 130);
+}
+
+
+
+.note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(97, 183, 183);
+  border-radius: 18px;
+  box-shadow: 8px 6px 9px rgb(110, 129, 130);
+  transition: transform 0.4s ease, text-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.note:hover {
+  transform: scale(1.05);
+}
+
+#input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 30px;
+  color: rgb(14, 102, 184);
+  font-size: 16px;
+
+}
+
+button {
+  border: none;
+  outline: none;
+  background: linear-gradient(90deg, rgb(19, 108, 172), rgb(148, 159, 218));
+  border-radius: 18px;
+  color: rgb(174, 178, 116);
+  font-size: 20px;
+  padding: 10px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, rgb(3, 24, 143), rgb(19, 108, 172));
+  color: aquamarine;
+  cursor: pointer;
+}
+
+#list {
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(25, 34, 42);
+  margin: 5px;
+
+}
+
+ul li {
+  list-style-type: none;
+  margin: 7px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+
+}
+
+ul li::before {
+  content: ' ';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-image: url(wrong.png);
+  background-size: cover;
+  background-position: center;
+  color: rgb(226, 43, 110);
+  width: 20px;
+  height: 20px;
+  right: 100%;
+  margin: 3px;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: rgb(20, 22, 12);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+
+
+}
+
+ul li span:hover {
+  cursor: pointer;
+  background-color: rgb(185, 224, 232);
+}
+
+ul li.checked {
+  color: black;
+  text-decoration: line-through;
+  color: rgb(42, 129, 30);
+
+
+}
+
+ul li.checked::before {
+  background-image: url(right.png);
+
+}
